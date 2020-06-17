@@ -7980,8 +7980,8 @@ minimist@^1.2.0, minimist@^1.2.5:
 
 miniprogram-api-typings@2.11.0:
   version "2.11.0"
-  resolved "http://registry.npm.qima-inc.com/miniprogram-api-typings/download/miniprogram-api-typings-2.11.0.tgz#c0a91ca2fea80e344509399c580cbad504a8f905"
-  integrity sha1-wKkcov6oDjRFCTmcWAy61QSo+QU=
+  resolved "https://registry.yarnpkg.com/miniprogram-api-typings/-/miniprogram-api-typings-2.11.0.tgz#c0a91ca2fea80e344509399c580cbad504a8f905"
+  integrity sha512-W+V267Ys4YqyMpLrAmpYCOzDlDAjd3Hhy7UKOAoztoyS/hDZgNQ1OhM2/pGnqVyLmz78U3oqxGx8Z+/SMrMZaQ==
 
 miniprogram-ci@^1.0.27:
   version "1.0.29"
