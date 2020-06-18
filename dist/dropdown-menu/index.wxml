@@ -15,7 +15,7 @@
       style="{{ item.showPopup ? 'color:' + activeColor : '' }}"
     >
       <view class="van-ellipsis">
-        {{ computed.displayTitle(item) }}
+        {{ computed.displayTitle(item)  }}
       </view>
     </view>
   </view>
