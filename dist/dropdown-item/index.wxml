@@ -27,7 +27,7 @@
       clickable
       icon="{{ item.icon }}"
       bind:tap="onOptionTap"
-      atchtouchmove="{{options.length>5?'':'catchTouchmove'}}"
+      catchtouchmove="{{options.length>5?'':'catchTouchmove'}}"
     >
       <view
         slot="title"
