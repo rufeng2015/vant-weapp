@@ -1,4 +1,4 @@
-/// <reference types="miniprogram-api-typings" />
+/// <reference types="wechat-miniprogram" />
 declare type DialogAction = 'confirm' | 'cancel';
 declare type DialogOptions = {
   lang?: string;
