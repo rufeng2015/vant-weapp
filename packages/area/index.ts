@@ -1,6 +1,7 @@
 import { VantComponent } from '../common/component';
 import { pickerProps } from '../picker/shared';
 import { Weapp } from 'definitions/weapp';
+import { requestAnimationFrame } from '../common/utils';
 
 type AreaItem = {
   name: string;
@@ -56,9 +57,9 @@ VantComponent({
   },
 
   mounted() {
-    setTimeout(() => {
+    requestAnimationFrame(() => {
       this.setValues();
-    }, 0);
+    });
   },
 
   methods: {
@@ -202,21 +203,22 @@ VantComponent({
 
       const stack = [];
       const indexes = [];
+      const { columnsNum } = this.data;
 
-      if (this.data.columnsNum >= 1) {
+      if (columnsNum >= 1) {
         stack.push(picker.setColumnValues(0, province, false));
         indexes.push(this.getIndex('province', code));
       }
 
-      if (this.data.columnsNum >= 2) {
+      if (columnsNum >= 2) {
         stack.push(picker.setColumnValues(1, city, false));
-        indexes.push(this.getIndex('province', code));
+        indexes.push(this.getIndex('city', code));
         if (city.length && code.slice(2, 4) === '00') {
           [{ code }] = city;
         }
       }
 
-      if (this.data.columnsNum === 3) {
+      if (columnsNum === 3) {
         stack.push(
           picker.setColumnValues(
             2,
@@ -224,6 +226,7 @@ VantComponent({
             false
           )
         );
+        indexes.push(this.getIndex('county', code));
       }
 
       return Promise.all(stack)

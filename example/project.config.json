@@ -5,30 +5,31 @@
 	},
 	"setting": {
 		"urlCheck": false,
+		"scopeDataCheck": false,
+		"coverView": true,
 		"es6": true,
-		"enhance": false,
 		"postcss": true,
+		"compileHotReLoad": false,
 		"preloadBackgroundData": false,
 		"minified": true,
-		"newFeature": true,
-		"coverView": true,
-		"nodeModules": true,
 		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
+		"newFeature": true,
 		"uglifyFileName": false,
+		"uploadWithSourceMap": true,
+		"useIsolateContext": true,
+		"nodeModules": true,
+		"enhance": false,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"showShadowRootInWxmlPanel": true,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"compileHotReLoad": false,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"useIsolateContext": true,
-		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
+		"bundle": false
 	},
 	"compileType": "miniprogram",
 	"cloudfunctionRoot": "functions/",
@@ -374,12 +375,21 @@
 					"id": -1,
 					"name": "index-bar",
 					"pathName": "pages/index-bar/index",
+					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
 					"name": "empty",
 					"pathName": "pages/empty/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 51,
+					"name": "share-sheet",
+					"pathName": "pages/share-sheet/index",
+					"query": "",
 					"scene": null
 				}
 			]
